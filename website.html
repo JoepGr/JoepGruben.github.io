@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> kickies.nl </title>
+<style>
+* {
+  box-sizing: border-box;
+}
+#Offwhite {
+  width: 30%;
+  height: 75%;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+}
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+  h1 {text-align: center;
+  }
+  h1 {font-size:50px;
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+table {
+  margin: auto;
+  column-rule-color: white;
+  text-color: white;
+}
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.item1 { grid-area: header;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: black;
+  padding: 5px;
+    grid-template-rows:75px 300px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>kickies</h1>
+
+<p></p>
+
+<div class="grid-container">
+  <div class="item1">
+<table>
+  <tr>
+    <th>Home</th>
+    <th>Contact</th>
+    <th>builders</th>
+  </tr>
+</table></div>
+  <div class="item2"><a href="nikeoffWhite.html"><img id="Offwhite" src="off white.jpg" alt="off white page"> </a></div>
+  <div class="item3"><a href="patta.html"><br> <img src="patta.jpg" <img width="200" height="222"> </a></div>
+  <div class="item4"><img src="nikesb.jpg" width="10" height="22"></div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
